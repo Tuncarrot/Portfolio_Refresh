@@ -1,0 +1,22 @@
+.title-card {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 100%;
+}
+
+#tile {
+    cursor: none;
+}
+
+div:hover > #hov{
+    display : block; 
+}
+  
+#hov{
+    display:none;
+    position:absolute;
+    font-style: italic;
+    font-size:20px;
+    font-weight: bold;
+    color: red;
+  }

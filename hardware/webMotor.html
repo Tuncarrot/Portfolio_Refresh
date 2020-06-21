@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/inline-styles.css">
+    <link rel="stylesheet" href="../css/colours.css">  
+    <link rel="stylesheet" href="../css/navigation.css"> 
+    <link rel="stylesheet" href="../css/fonts.css"> 
+    <link rel="stylesheet" href="../css/styling.css">
+    <link rel="stylesheet" href="../css/page-styling.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6f955cf7e0.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>Hardware</title>
+</head>
+<body>
+    <div class="row">
+            <a href="../hardware.html">
+                <div class="fas fa-long-arrow-alt-left icon-focus box-icon"></div>
+            </a>
+        <div class="fab fa-raspberry-pi box-icon adobe-colour-static icon-focus"></div>
+    </div>
+    <div class="row">
+        <div class="jumbotron title-card">
+            <h1 class="display-4 title-font">Web Controlled Motor Tutorial</h1>
+            <p class="lead content-font">Here you can find a way to control a motor remotely.</p>
+            <hr class="my-4">
+
+            <h3 class="display-5 title-font">Introduction</h3>
+            <h5 class="content-font">&emsp;The purpose of this tutorial is to display and inform readers the process of connecting a step motor to a raspberry pi and triggering that motor through web calls. This small project allows for basic automation to be introduced to almost any part of your life. I find this idea incredibility interesting and have included some applications below. Your creativity is your only restraint, as the possibilites are limitless.</h5>
+            <br>
+            <h3 class="display-5 title-font">Applications</h3>
+            <ul>
+                <li><h5 class="content-font">Window Blinds Controller</h5></li>
+                <li><h5 class="content-font">Manual outdoor feeder</h5></li>
+
+            </ul>
+            <br>
+            <h3 class="display-5 title-font">Goals</h3>
+            <ul>
+                <li><h5 class="content-font">Operate a motor remotely</h5></li>
+            </ul>
+            <br>
+            <h3 class="display-5 title-font">Components Required</h3>
+            <h5 class="content-font">&emsp;Raspberry Pi Components</h5>
+
+            <ul>
+                <li><h5 class="content-font"><a href="https://www.raspberrypi.org/products/raspberry-pi-3-model-b/">Raspberry Pi 3 (or 2)</a></h5></li>
+                <li><h5 class="content-font"><a href="https://www.amazon.ca/CanaKit-Raspberry-Supply-Adapter-Listed/dp/B00MARDJZ4?ref_=fsclp_pl_dp_1">Micro USB Power Supply 2.1A</a></h5></li>
+                <li><h5 class="content-font"><a href="https://www.amazon.ca/Sandisk-Ultra-Micro-UHS-I-Adapter/dp/B07GH5J77R/ref=sr_1_3?crid=389PSJ9VF6IMC&keywords=8%2Bgig%2Bmicro%2Bsd%2Bcard&qid=1590437504&sprefix=8gig%2Bmicro%2Caps%2C168&sr=8-3&th=1">8 gb Micro SD Card (With Optional Adaptor)</a></h5></li>
+            </ul>
+            <br>
+            <h5 class="content-font">&emsp;Motor & Connection Components</h5>
+            <ul>
+                <li><h5 class="content-font"><a href="https://www.amazon.ca/Neuftech-Moteur-28BYJ-48-ULN2003-Arduino/dp/B00NW4X25G/ref=pd_sbs_504_4/142-7860928-9771343?_encoding=UTF8&pd_rd_i=B00NW4X25G&pd_rd_r=77f29121-f752-47a7-82bf-bf474cfbd401&pd_rd_w=NYEVj&pd_rd_wg=37kwB&pf_rd_p=0ec96c83-1800-4e36-8486-44f5573a2612&pf_rd_r=BV5GJ5QG5N4WBKK61WPT&psc=1&refRID=BV5GJ5QG5N4WBKK61WPT">Step Motor 28BYJ-48 5V DC</a></h5></li>
+                <li><h5 class="content-font"><a href="https://www.amazon.ca/Neuftech-Moteur-28BYJ-48-ULN2003-Arduino/dp/B00NW4X25G/ref=pd_sbs_504_4/142-7860928-9771343?_encoding=UTF8&pd_rd_i=B00NW4X25G&pd_rd_r=77f29121-f752-47a7-82bf-bf474cfbd401&pd_rd_w=NYEVj&pd_rd_wg=37kwB&pf_rd_p=0ec96c83-1800-4e36-8486-44f5573a2612&pf_rd_r=BV5GJ5QG5N4WBKK61WPT&psc=1&refRID=BV5GJ5QG5N4WBKK61WPT">Driver Board ULN2003</a></h5></li>
+                <li><h5 class="content-font"><a href="https://www.amazon.ca/Aukru-20cm-Cable-Arduino-Raspberry/dp/B019SX71TC/ref=sr_1_4?keywords=raspberry+pi+female+to+female+connectors&qid=1590438003&sr=8-4">Female to Female Dupont Jumper Wires x6</a></h5></li>
+            </ul>
+            <br>    
+            <p class="lead content-font">&emsp;Ideally, you can purchase a kit which contains all the components, which may result in better savings and convenience. Additionally, if you are on a budget and don't mind long shipping times, these components can be found on <a href="https://www.aliexpress.com/">AliExpress</a> for very low prices.</p>
+            <br>
+            <h3 class="display-5 title-font">Part 1 - Linux Operating System Installation</h3>
+            <h5 class="content-font">&emsp;To begin the process, you must install a Linux operating system on the raspberry pi. For the purpose of this tutorial, we will be installing Raspbian. We can install this with the use the <a href="https://www.raspberrypi.org/downloads/">Raspberry Pi Imager</a>. This program is an easy way to install Raspbian. Once you download the program, follow the instructions provided by the program to format your Micro SD card and boot up your Raspberry Pi. There will be some initial settings that you must configure.</h5>
+            <br>
+            <h3 class="display-5 title-font">Part 2 - Wiring the Raspberry Pi</h3>
+            <h5 class="content-font">&emsp;This is where the fun begins. Each GPIO pin can be individually powered on. There are some pins that provide power and some that are ground, and others that provide specific communication protocols.</h5>
+            <br>
+            <div style="text-align: center;">
+                <img src="../assets/images/GPIOHeader.png" class="img-fit">
+                <p class="source"><i>Figure 2: GPIO Pins, taken from https://www.raspberrypi-spy.co.uk/2012/06/simple-guide-to-the-rpi-gpio-header-and-pins/#prettyPhoto</i></p>
+            </div>
+            <br>
+            <h5 class="content-font">&emsp;Assuming you have all the required components, lets begin by attaching the ULM2003 Driver to the Raspberry Pi. Lets quickly go over the different components of the ULN2003 Driver board that we will be interacting with. Please make sure the Raspberry Pi is not connected to any power source during this section.</h5>
+            <br>
+            <div style="text-align: center;">
+                <img src="../assets/images/Tutorials/WebMotor/WCM_ULN2003_Labeled.png" class="img-fit">
+                <p class="source"><i>Figure 3: ULN2003 Driver Board Components</i></p>
+            </div>
+            <br>
+            <h5 class="content-font">&emsp;Lets begin by attaching one end of the female wires into the ULN2003 Driver Board. We will be attaching the jumper wires to the control inputs and power inputs following the format of...</h5>
+            <br>
+            <ul>
+                <li><h5 class="content-font">IN1 -> Pin 7 (GPIO4)</h5></li>
+                <li><h5 class="content-font">IN2 -> Pin 11 (GPIO17)</h5></li>
+                <li><h5 class="content-font">IN3 -> Pin 13 (GPIO27)</h5></li>
+                <li><h5 class="content-font">IN4 -> Pin 15 (GPIO22)</h5></li>
+                <br>
+                <li><h5 class="content-font">Negative(-) -> Pin 6 (Ground)</h5></li>
+                <li><h5 class="content-font">Positive(+) -> Pin 4 (5V)</h5></li>
+            </ul>
+            <br>
+            <div style="text-align: center;">
+                <img src="../assets/images/Tutorials/WebMotor/WMC_UNL2003_WiresIn.png" class="img-fit">
+                <p class="source"><i>Figure 4: Insert female wires into the ULN2003 Driver Board</i></p>
+            </div>
+            <h5 class="content-font">&emsp;Now lets attach the other end of those jumper wires into the Raspberry Pi.</h5>
+            <br>
+            <div style="text-align: center;">
+                <img src="../assets/images/Tutorials/WebMotor/WCM_RP_Labeled.png" class="img-fit">
+                <p class="source"><i>Figure 5: Insert female wires into the Raspberry Pi following the provided scheme.</i></p>
+            </div>
+            <br>
+            <h5 class="content-font">&emsp;Lastly, attach the 28BYJ-48 step motor input to the motor input. This concludes the wiring section.</h5>
+            <br>
+            <div style="text-align: center;">
+                <img src="../assets/images/Tutorials/WebMotor/WCM_ULN2003_MotorConnection.png" class="img-fit">
+                <p class="source"><i>Figure 6: Insert step motor connector into place</i></p>
+            </div>
+            <br>
+            <h3 class="display-5 title-font">Part 3 - Programming</h3>
+            <h5 class="content-font">&emsp;There are two major sections of this part. The first will be getting the motor to rotate and the second will be making that process remote. Lets begin with getting the motor to rotate.</h5>
+            <br>
+
+        </div>
+    </div>
+</body>
+</html>

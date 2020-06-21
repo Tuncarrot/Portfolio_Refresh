@@ -1,0 +1,115 @@
+.icon-focus {
+    color: #fff;
+}
+
+.black-text {
+    color: #000000;
+}
+
+.home-colour-static {
+    background: #089000
+}
+
+.home-colour:hover *  {
+    background: #089000
+}
+
+.html5-colour-static {
+    background: #fe4c1e
+}
+
+.html5-colour:hover *  {
+    background: #fe4c1e
+}
+
+.css3-colour-static {
+    background: #0074db
+}
+
+.css3-colour:hover *  {
+    background: #0074db
+}
+
+.js-colour-static {
+    background: #fba921
+}
+
+.js-colour:hover *  {
+    background: #fba921
+}
+
+.adobe-colour-static {
+    background: #ce382c
+}
+
+.adobe-colour:hover *  {
+    background: #ce382c
+}
+
+.blender-colour-static {
+    background: #f2993b
+}
+
+.blender-colour:hover * {
+    background: #f2993b
+}
+
+.github-colour:hover *  {
+    background: #333
+}
+
+.linkedin-colour-static {
+    background: #0e76a8
+}
+
+.linkedin-colour:hover *  {
+    background: #0e76a8
+}
+
+.microsoft-colour:hover *  {
+    background: #00a2ed
+}
+
+.linux-colour-static {
+    background: #000000
+}
+
+.linux-colour:hover *  {
+    background: #000000
+}
+
+.code-colour:hover *  {
+    background: #7FBA00
+}
+
+.trophy-colour-static {
+    background: #d4af37
+}
+
+.trophy-colour:hover * {
+    background: #d4af37
+}
+
+.school-colour:hover * {
+    background:#000000
+}
+
+.graduate-colour:hover * {
+    background: #000000
+}
+
+.endpoints-colour:hover * {
+    background:#6a0dad
+}
+
+.twitch-colour-static {
+    background: #6441a5;
+}
+
+.twitch-colour:hover *  {
+    background: #6441a5;
+}
+
+.popover-title{
+    background: #6a0dad;
+}

@@ -1,0 +1,108 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/stylesheets/styling.css">
+    <title>Portfolio</title>
+</head>
+<body>
+
+    <div class="fixed-top" id="navbar">
+        <a href="./index.html">About Me</a>
+        <a href="./web.html">Web</a>
+        <a href="./gamedev.html">Game Dev</a>
+        <a href="./featured.html">Featured</a>
+        <a href="./extras.html">Extras</a>
+    </div>
+
+
+    <script src="./assets/javascript/effects.js"></script>
+
+    <div class="rellax" data-rellax-speed="4">
+        <img src="./assets/images/Sky8.png" class="skyImage">
+    </div>
+    <div class="rellax" data-rellax-speed="-5">
+        <img src="./assets/images/Sun1.png" class="sunImage">
+    </div>
+    <div class="rellax">
+        <img src="./assets/images/City.png" class="cityImage">
+    </div>
+
+    <script src="./assets/javascript/rellax.min.js"></script>
+    <script>
+        var rellax = new Rellax('.rellax');
+    </script>
+ 
+    <div class="rellax header-space">
+        <div class="card text-center blend-in">
+            <div class="card-body">
+                <h2 class="title-styling card-space-half">About Me</h2>
+                <div class="row justify-content-center">
+                    <div class="card mb-3 blend-in card-space" style="max-width: 75%;">
+                        <div class="row no-gutters">
+                          <div class="col-md-4">
+                            <img src="assets/images/me.jpg" class="card-img" alt="Placeholder Image">
+                          </div>
+                          <div class="col-md-8">
+                                <div class="card-body border-primary">
+                                    <div class="row justify-content-center title-styling">
+                                        <h5>Programming Languages</h5>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <span class="badge badge-pill badge-primary skills-pills">C</span>
+                                        <span class="badge badge-pill badge-primary skills-pills">C++</span>
+                                        <span class="badge badge-pill badge-primary skills-pills">C#</span>
+                                    </div>
+                                    <div class="row justify-content-center title-adjust title-styling">
+                                        <h5>Web Languages & Frameworks</h5>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <span class="badge badge-pill badge-danger skills-pills">HTML</span>
+                                        <span class="badge badge-pill badge-danger skills-pills">CSS</span>
+                                        <span class="badge badge-pill badge-danger skills-pills">Javascript</span>
+                                    </div>
+                                    <div class="row justify-content-center pills-adjust">
+                                        <span class="badge badge-pill badge-danger skills-pills">Ruby on Rails</span>
+                                        <span class="badge badge-pill badge-danger skills-pills">React JS</span>
+                                        <span class="badge badge-pill badge-danger skills-pills">Bootstrap</span>
+                                    </div>
+                                    <div class="row justify-content-center title-adjust title-styling">
+                                        <h5>Interests & Hobbies</h5>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <span class="badge badge-pill badge-warning skills-pills">&#129354;</span>
+                                        <span class="badge badge-pill badge-warning skills-pills">&#127929;</span>
+                                        <span class="badge badge-pill badge-warning skills-pills">&#127843;</span>
+                                        <span class="badge badge-pill badge-warning skills-pills">&#127958;</span>
+                                        <span class="badge badge-pill badge-warning skills-pills">&#128123;</span>
+                                    </div>
+                                    <div class="row justify-content-center title-adjust title-styling">
+                                        <h5>Additional Programs</h5>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <span class="badge badge-pill badge-light skills-pills"><img src="assets/images/PSIcon.png" alt="Photoshop Icon"></span>
+                                        <span class="badge badge-pill badge-light skills-pills"><img src="assets/images/AFIcon.png" alt="After Effects Icon"></span>
+                                        <span class="badge badge-pill badge-light skills-pills"><img src="assets/images/PPIcon.png" alt="Premiere Pro Icon"></span>
+                                        <span class="badge badge-pill badge-light skills-pills"><img src="assets/images/AIcon.png" alt="Audacity Icon"></span>
+                                        <span class="badge badge-pill badge-light skills-pills"><img src="assets/images/blender.png" alt="Blender Icon"></span>
+                                        <span class="badge badge-pill badge-light skills-pills"><img src="assets/images/unity.png" alt="Unity Icon"></span>
+                                    </div>
+                                </div>  
+                          </div>
+                        </div>
+                      </div>
+
+                    <div id="intro"></div>
+
+                </div>
+            </div>
+            <div class="card-footer text-muted blend-in">
+                Updated on April 11th, 2020
+            </div>
+        </div>
+    </div>
+
+<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+<script src="./assets/javascript/components.js"></script>
+</body>
+</html>

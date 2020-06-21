@@ -1,0 +1,33 @@
+.box-icon
+{
+    position: relative;
+    list-style:none;
+    width: 70px;
+    height: 70px;
+    margin-top:25px;
+    margin-left: 25px;
+    display:flex !important;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    color: rgba(255,255,255,0.3);
+    font-size: 30px !important;
+    text-decoration: none; /* no underline */
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+}
+
+table, th, td {
+    padding: 5px;
+  }
+
+.img-fit {
+    max-width: 70%;
+}
+
+.source {
+    font-size: 14px;
+}

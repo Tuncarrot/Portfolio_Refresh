@@ -1,0 +1,17 @@
+@font-face {
+    font-family: titlefont;
+    src: url(../fonts/Oswald-Regular.ttf);
+  }
+  
+.title-font {
+    font-family: titlefont;
+  }
+
+@font-face {
+    font-family: contentfont;
+    src: url(../fonts/Merriweather-Regular.ttf);
+}
+
+.content-font {
+    font-family: contentfont;
+  }
