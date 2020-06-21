@@ -234,9 +234,9 @@
         </li>
     </ul>
     <ul>
-        <p style="margin-left:22em"></p>
+        &ensp;<p style="margin-left:17em"></p>
         <p class="tilt-text">Finish</p>
-        <li class="endpoints-colour" data-toggle="popover" id="tile19" data-html="true"
+        <li class="endpoints-colour" data-toggle="popover" id="tile20" data-html="true"
         data-content="Insert another token to continue..." 
         data-placement="bottom">
             <a href="#">
@@ -245,6 +245,17 @@
                 <span></span>
                 <span></span>
                 <span class = "fas fa-flag-checkered"></span>
+            </a>
+        </li>
+        <li class="school-colour" data-toggle="popover" id="tile19" data-html="true"
+        data-content="Get Accepted in Wilfrid Laurier's Computer Science Program. <br><br><b>All Stats +3</b>" 
+        data-placement="bottom">
+            <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class = "fas fa-school"></span>
             </a>
         </li>
         <li class="github-colour" data-toggle="popover" id="tile18" data-html="true"
@@ -345,9 +356,13 @@
             trigger: "hover" 
         });
         $("#tile19").popover({ 
+            title: "📘 Accepted Into School", 
+            trigger: "hover" 
+        });
+        $("#tile20").popover({ 
             title: "Continue?", 
             trigger: "hover" 
-        }); 
+        });  
         $('#about-me-pointer').on('mouseenter mouseleave', function(e) {
             $('#about-me-collection').trigger(e.type);
         });
