@@ -40,6 +40,8 @@
         </div>
     </nav>
     
+    <input type="checkbox" name="">
+
     <br><br><br><br><br><br>
 <div id="tile-design">
     <ul>
@@ -51,7 +53,7 @@
                 <span></span>
                 <span></span>
                 <span></span>
-                <span class = "fab fa-adobe"></span>
+                <span class = "fab fa-palette"></span>
             </a>
         </li>
         <li class="linux-colour" data-toggle="popover" id="tile6" data-html="true"
@@ -363,9 +365,8 @@
             title: "Continue?", 
             trigger: "hover" 
         });  
-        $('#about-me-pointer').on('mouseenter mouseleave', function(e) {
-            $('#about-me-collection').trigger(e.type);
-        });
+        $("#about-me-pointer").parent().addClass('hovered');
+        // yea idk
     </script> 
     
     <!-- The core Firebase JS SDK is always required and must be listed first -->
