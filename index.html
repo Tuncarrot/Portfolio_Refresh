@@ -30,10 +30,16 @@
           <li class="endpoints-colour"><a href="./extras.html">Extras</a></li>
           <br>
           <li class="title-font content-title">Programming Languages</li>
-          <li class="content-font content-styling">C, C++, C#, Python</li>
+          <li class="content-font content-styling">C#, C++, C, Python</li>
+          <br>
+          <li class="title-font content-title">Databases & Warehouses</li>
+          <li class="content-font content-styling">Google Big Query, SQL, MongoDB, SQLAlchemy, SQLite, PostgreSQL</li>
+          <br>
+          <li class="title-font content-title">Additional Tools</li>
+          <li class="content-font content-styling">Sentry, Redash, Apache Superset</li>
           <br>
           <li class="title-font content-title">Web Languages & Frameworks</li>
-          <li class="content-font content-styling">HTML, CSS, JavaScript, Ruby on Rails, Bootstrap, Flask, ASP.NET</li>
+          <li class="content-font content-styling">JavaScript, HTML, CSS, Ruby on Rails, Bootstrap, Flask, ASP.NET</li>
           <br>
           <li class="title-font content-title">Programs & Extras</li>
           <li class="content-font content-styling">Photoshop, Premiere Pro, After Effects, Blender, Unity, Audacity</li>
@@ -236,17 +242,16 @@
         </li>
     </ul>
     <ul>
-        &ensp;<p style="margin-left:17em"></p>
-        <p class="tilt-text">Finish</p>
+        &ensp;<p style="margin-left:20em"></p>
         <li class="endpoints-colour" data-toggle="popover" id="tile20" data-html="true"
-        data-content="Insert another token to continue..." 
+        data-content="Spend 16 months at Geotab. <br><br><b>Knowledge +3</b>" 
         data-placement="bottom">
             <a href="#">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
-                <span class = "fas fa-flag-checkered"></span>
+                <span class = "fas fa-map-marked-alt"></span>
             </a>
         </li>
         <li class="school-colour" data-toggle="popover" id="tile19" data-html="true"
@@ -280,6 +285,35 @@
                 <span></span>
                 <span></span>
                 <span class = "fab fa-linkedin-in"></span>
+            </a>
+        </li>
+    </ul>
+    <ul>
+        <p style="margin-left:24.5em"></p>
+        <li class="graduate-colour" data-toggle="popover" id="tile21" data-html="true"
+        data-content="Graduate Wilfrid Laurier's Computer Science Program.<br><br><b>All Stats +5</b>" 
+        data-placement="bottom">
+            <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class = "fas fa-graduation-cap"></span>
+            </a>
+        </li>
+    </ul>
+    <ul>
+        <p style="margin-left:25.2em"></p>
+        <p class="tilt-text">Finish</p>
+        <li class="graduate-colour" data-toggle="popover" id="tile22" data-html="true"
+        data-content="Whats Next?" 
+        data-placement="bottom">
+            <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class = "fas fa-flag-checkered"></span>
             </a>
         </li>
     </ul>
@@ -362,9 +396,17 @@
             trigger: "hover" 
         });
         $("#tile20").popover({ 
-            title: "Continue?", 
+            title: "📍 Work at Geotab", 
             trigger: "hover" 
         });  
+        $("#tile21").popover({ 
+            title: "🎓 Graduate From Laurier", 
+            trigger: "hover" 
+        }); 
+        $("#tile22").popover({ 
+            title: "Continue?", 
+            trigger: "hover" 
+        }); 
         $("#about-me-pointer").parent().addClass('hovered');
         // yea idk
     </script> 

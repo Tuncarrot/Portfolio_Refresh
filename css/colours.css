@@ -129,3 +129,7 @@
 .popover-title{
     background: #6a0dad;
 }
+
+.geotab-colour:hover * {
+    background: #21325e;
+}
